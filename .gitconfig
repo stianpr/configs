@@ -1,0 +1,8 @@
+[alias]
+	s = status
+[user]
+	name = Stian Prestholdt
+	email = stian@e5r.no
+[core]
+	precomposeunicode = false
+	quotepath = false
