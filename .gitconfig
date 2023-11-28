@@ -1,8 +1,12 @@
 [alias]
+	co = checkout
 	s = status
+	pretty = log --graph --pretty=format:'%Cred%h%Creset %Cgreen%as %d%Creset %s %C(bold blue)<%an>%Creset' --abbrev-commit
+	recent = for-each-ref --sort=committerdate refs/heads/ --format='%(HEAD) %(color:yellow)%(refname:short)%(color:reset) - %(color:red)%(objectname:short)%(color:reset) - %(contents:subject) - %(authorname) (%(color:green)%(committerdate:relative)%(color:reset))'
 [user]
-	name = Stian Prestholdt
 	email = stian@e5r.no
+	name = Stian Prestholdt
 [core]
-	precomposeunicode = false
-	quotepath = false
+	editor = code --wait
+[push]
+	autoSetupRemote = true
